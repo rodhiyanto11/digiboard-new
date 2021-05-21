@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import '../../Main.scss';
+
+.app-main{
+    padding-top: 0px;
+}
+.app-main__outer{
+    background: $theme;
+}
+.app-sidebar{
+    padding-top : 0px;
+}
+.app-sidebar .scrollbar-sidebar ::after{
+    box-shadow: none;
+    box-sizing: none !important;
+}
+.app-sidebar .scrollbar-sidebar ::before{
+    box-shadow: none !important;
+    box-sizing: none !important;
+}
+.app-theme-white.fixed-header .app-header__logo{
+    background: $theme!important;
+    box-shadow:  0px 5px 30px 3px  $theme!important;
+}
+.app-theme-white .app-footer .app-footer__inner, .app-theme-white .app-header{
+    
+    background: $theme!important;  /* fallback for old browsers */
+    box-shadow:  0px 0px 0px 0px  $theme!important;
+}
+.app-sidebar__heading{
+    color : $white !important;
+}
+.vertical-nav-menu li a:hover{
+  font-size: 1.1rem !important;
+  font-weight: 700;
+  transition: visibility 0s, opacity 0.5s linear;
+  background-color: $yellow !important;
+  color : black;
+}
+
+.metismenu-icon{
+  color : $white;
+  opacity: 1 !important;
+}.closed-sidebar .app-sidebar .app-sidebar__inner ul li a{
+  border-radius: none !important;
+}
+
+.vertical-nav-menu li a{
+  height: 42px !important;
+  border-radius: 10px !important;
+  color : $white !important;
+  opacity: 1 !important;
+}
+.vertical-nav-menu li a:active{
+  color : $white !important;
+}
+.vertical-nav-menu li a.mm-active{
+  background-color:$theme;
+}
+.vertical-nav-menu li a:hover{
+  background-color: $yellow;
+  color : black !important;
+    i.metismenu-icon{
+    color : black !important;
+}
+}
+.scrollbar-sidebar{
+  background: $theme;
+  border : none;
+  box-shadow: 0px;
+}
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+.vertical-nav-menu i.metismenu-state-icon {
+  opacity: 1 !important;
+  color: $white !important;
+}
+.app-main__inner{
+  padding-left: 0px !important;
+  padding-right: 10px !important;
+  background : $theme;
+  
+}
+.profile-responsive{
+  border-radius: 10px !important;
+}
+.fa-angle-down{
+    color: $white;
+}
+
+
