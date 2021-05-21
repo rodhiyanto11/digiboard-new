@@ -6,7 +6,7 @@ import routes from './config/routes/routes'
 import $ from 'jquery'
 
 import {
-  BrowserRouter,
+  HashRouter,
 
   Switch,
   Route,
@@ -89,7 +89,7 @@ function App() {
       <div className={state.classSideBar}>
         <Header changeNav={(mobile) => fSideBar(mobile)} />
         <div className="app-main">
-          <BrowserRouter>
+          <HashRouter>
 
 
             <Route component={SideBar} />
@@ -115,7 +115,7 @@ function App() {
               <Footer />
             </div>
 
-          </BrowserRouter>
+          </HashRouter>
         </div>
       </div>
     </div>
