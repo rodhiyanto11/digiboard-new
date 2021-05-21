@@ -1,5 +1,6 @@
 {
-  "homepage": "https://rodhiyanto11.github.io/digiboard-new/",
+  "homepage": "http://rodhiyanto11.github.io/digiboard-new/",
+  "start_url": ".",
   "name": "dashboard",
   "version": "0.1.0",
   "private": true,
@@ -49,5 +50,7 @@
     "not dead",
     "not op_mini all"
   ],
-  "devDependencies": {}
+  "buildOpertions": {
+    "baseUrl": "'./'"
+  }
 }
