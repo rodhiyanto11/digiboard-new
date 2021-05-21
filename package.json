@@ -1,5 +1,5 @@
 {
-  "home": "https://rodhiyanto11.github.io/digiboard-new/",
+  "homepage": "https://rodhiyanto11.github.io/digiboard-new/",
   "name": "dashboard",
   "version": "0.1.0",
   "private": true,
@@ -15,6 +15,7 @@
     "apexcharts": "^3.26.0",
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
+    "gh-pages": "^3.1.0",
     "jquery": "^3.6.0",
     "leaflet": "^1.7.1",
     "node-sass": "^5.0.0",
@@ -48,7 +49,5 @@
     "not dead",
     "not op_mini all"
   ],
-  "devDependencies": {
-    "gh-pages": "^2.1.1"
-  }
+  "devDependencies": {}
 }
