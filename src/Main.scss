@@ -1,0 +1,28 @@
+
+$theme  : #263238;
+$second_theme : #4D774E;
+$white  : #ffffff;
+$white_second : #eeeeee;
+$white_third : #fafafa;
+$yellow : #F1B24A;
+@keyframes fadeInOpacity {
+	0% {
+    top : 20px
+	}
+  50%{
+    top : 50px
+  }
+	100% {
+    top : 0px
+    // -webkit-transform: translateX(0%) rotate(0deg);
+	// transform: translateX(0%) rotate(0deg);
+	}
+}
+@keyframes up-down {
+  0% {
+    top : 0px
+  }
+  100%{
+    top : -3px
+  }
+}
