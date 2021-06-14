@@ -1,5 +1,5 @@
 {
-  "homepage": "http://rodhiyanto11.github.io/digiboard-new/",
+  "homepage": ".",
   "start_url": ".",
   "name": "dashboard",
   "version": "0.1.0",
@@ -34,7 +34,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
+    "start": "PORT=3001 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

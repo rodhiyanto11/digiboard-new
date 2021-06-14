@@ -983,7 +983,7 @@ const Dashboard = () => {
         <React.Fragment>
             <div className="row">
                 {/* <div className="card-content-header ml-1 mt-1">
-                <FontAwesomeIcon icon={["fas", "play"]} className="mr-2" />Admedika Case Suspect Covid-19
+                <FontAwesomeIcon icon={["fas", "list-ul"]} className="mr-2" />Admedika Case Suspect Covid-19
                 </div> */}
                 {/* <h5 className="text-white col-md-12"></h5> */}
 
@@ -993,7 +993,7 @@ const Dashboard = () => {
                             <div class="mb-2 card bg-white ">
                                 <div className="card-body ">
                                     <div className="card-content-header mb-4">
-                                        <FontAwesomeIcon icon={["fas", "play"]} className="mr-2" />Total Provider
+                                        <FontAwesomeIcon icon={["fas", "list-ul"]} className="mr-2" />Total Provider
                                     </div>
                                     <div className="card-value">
                                         4,076,722
@@ -1005,7 +1005,7 @@ const Dashboard = () => {
                             <div class="mb-2 card bg-white ">
                                 <div className="card-body ">
                                     <div className="card-content-header mb-4">
-                                        <FontAwesomeIcon icon={["fas", "play"]} className="mr-2" />Total Patient
+                                        <FontAwesomeIcon icon={["fas", "list-ul"]} className="mr-2" />Total Patient
                                     </div>
                                     <div className="card-value">
                                         566,257(13.89%)
@@ -1017,7 +1017,7 @@ const Dashboard = () => {
                             <div class="mb-2 card bg-white ">
                                 <div className="card-body ">
                                     <div className="card-content-header mb-4">
-                                        <FontAwesomeIcon icon={["fas", "play"]} className="mr-2" />Total Payor
+                                        <FontAwesomeIcon icon={["fas", "list-ul"]} className="mr-2" />Total Payor
                                     </div>
                                     <div className="card-value">
                                         Rp. 29.488
@@ -1029,7 +1029,7 @@ const Dashboard = () => {
                             <div class="mb-2 card bg-white ">
                                 <div className="card-body ">
                                     <div className="card-content-header mb-4">
-                                        <FontAwesomeIcon icon={["fas", "play"]} className="mr-2" />Open Case
+                                        <FontAwesomeIcon icon={["fas", "list-ul"]} className="mr-2" />Open Case
                                     </div>
                                     <div className="card-value">
                                         155
@@ -1041,7 +1041,7 @@ const Dashboard = () => {
                             <div class="mb-2 card bg-white ">
                                 <div className="card-body ">
                                     <div className="card-content-header mb-4">
-                                        <FontAwesomeIcon icon={["fas", "play"]} className="mr-2" />Discharged
+                                        <FontAwesomeIcon icon={["fas", "list-ul"]} className="mr-2" />Discharged
                                     </div>
                                     <div className="card-value">
                                         1 : 46,080
@@ -1053,7 +1053,7 @@ const Dashboard = () => {
                             <div class="mb-2 card bg-white ">
                                 <div className="card-body ">
                                     <div className="card-content-header mb-4">
-                                        <FontAwesomeIcon icon={["fas", "play"]} className="mr-2" />Last Refresh
+                                        <FontAwesomeIcon icon={["fas", "list-ul"]} className="mr-2" />Last Refresh
                                     </div>
                                     <div className="card-value">
                                         6 Mei 2021 2:53:29
@@ -1071,7 +1071,7 @@ const Dashboard = () => {
                             <div class="mb-2 card bg-white">
                                 <div className="card-body " >
                                     <div className="card-content-header mb-4">
-                                        <FontAwesomeIcon icon={["fas", "play"]} className="mr-2" />Peta Sebaran
+                                        <FontAwesomeIcon icon={["fas", "list-ul"]} className="mr-2" />Peta Sebaran
                                     </div>
                                     <div className="map" style={{height : `${state.hight}px`}}>
                                     <MapContainer
@@ -1095,7 +1095,7 @@ const Dashboard = () => {
                             <div class="mb-2 card bg-white " >
                                 <div className="card-body ">
                                     <div className="card-content-header mb-4">
-                                        <FontAwesomeIcon icon={["fas", "play"]} className="mr-2" />List Payor
+                                        <FontAwesomeIcon icon={["fas", "list-ul"]} className="mr-2" />List Payor
                                     </div>
                                     <ReactApexChart id="behind-map" options={listpayor.options} series={listpayor.series} type="bar" />
                                 </div>
@@ -1105,7 +1105,7 @@ const Dashboard = () => {
                             <div class="mb-2 card bg-white ">
                                 <div className="card-body ">
                                     <div className="card-content-header mb-4">
-                                        <FontAwesomeIcon icon={["fas", "play"]} className="mr-2" />List Provider
+                                        <FontAwesomeIcon icon={["fas", "list-ul"]} className="mr-2" />List Provider
                                     </div>
                                     <ReactApexChart options={listpayor.options} series={listpayor.series} type="bar" />
                                 </div>
@@ -1121,7 +1121,7 @@ const Dashboard = () => {
                             <div class="mb-2 card bg-white ">
                                 <div className="card-body ">
                                     <div className="card-content-header mb-4">
-                                        <FontAwesomeIcon icon={["fas", "play"]} className="mr-2" />Milestone
+                                        <FontAwesomeIcon icon={["fas", "list-ul"]} className="mr-2" />Milestone
                                     </div>
                                     <div className="">
                                         <ReactApexChart options={areachartTime.options} series={areachartTime.series} type="area" height={120} style={{ marginTop: "-20px" }} />
@@ -1134,7 +1134,7 @@ const Dashboard = () => {
                             <div class="mb-2 card bg-white ">
                                 <div className="card-body " >
                                     <div className="card-content-header mb-4">
-                                        <FontAwesomeIcon icon={["fas", "play"]} className="mr-2" />Movement Trend
+                                        <FontAwesomeIcon icon={["fas", "list-ul"]} className="mr-2" />Movement Trend
                                     </div>
                                     <div className="">
                                         <ReactApexChart options={areachartTime.options} series={areachartTime.series} type="area" height={120} style={{ marginTop: "-20px" }} />

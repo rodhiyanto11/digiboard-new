@@ -65,7 +65,7 @@ const Dashboard = () => {
         <React.Fragment>
             <div className="row">
                 {/* <div className="card-content-header ml-1 mt-1">
-                    <FontAwesomeIcon icon={["fas", "play"]} className="mr-2" />OverView Prov Kalimantan Selatan Periode Januari s/d Maret 2021
+                    <FontAwesomeIcon icon={["fas", "list-ul"]} className="mr-2" />OverView Prov Kalimantan Selatan Periode Januari s/d Maret 2021
                 </div> */}
                 <h5 className="text-white col-md-12"></h5>
                 <div className="col-md-12">
@@ -74,7 +74,7 @@ const Dashboard = () => {
                             <div class="mb-2 card bg-white ">
                                 <div className="card-body ">
                                     <div className="card-content-header mb-4">
-                                        <FontAwesomeIcon icon={["fas", "play"]} className="mr-2" />Jumlah Penduduk
+                                        <FontAwesomeIcon icon={["fas", "list-ul"]} className="mr-2" />Jumlah Penduduk
                                     </div>
                                     <div className="card-value">
                                         4,076,722
@@ -86,7 +86,7 @@ const Dashboard = () => {
                             <div class="mb-2 card bg-white ">
                                 <div className="card-body ">
                                     <div className="card-content-header mb-4">
-                                        <FontAwesomeIcon icon={["fas", "play"]} className="mr-2" />Jumlah Pasien
+                                        <FontAwesomeIcon icon={["fas", "list-ul"]} className="mr-2" />Jumlah Pasien
                                     </div>
                                     <div className="card-value">
                                         566,257(13.89%)
@@ -98,7 +98,7 @@ const Dashboard = () => {
                             <div class="mb-2 card bg-white ">
                                 <div className="card-body ">
                                     <div className="card-content-header mb-4">
-                                        <FontAwesomeIcon icon={["fas", "play"]} className="mr-2" /> Total Biaya Faskes
+                                        <FontAwesomeIcon icon={["fas", "list-ul"]} className="mr-2" /> Total Biaya Faskes
                                     </div>
                                     <div className="card-value">
                                         Rp. 29.488
@@ -110,7 +110,7 @@ const Dashboard = () => {
                             <div class="mb-2 card bg-white ">
                                 <div className="card-body ">
                                     <div className="card-content-header mb-4">
-                                        <FontAwesomeIcon icon={["fas", "play"]} className="mr-2" /> Jumlah Dokter
+                                        <FontAwesomeIcon icon={["fas", "list-ul"]} className="mr-2" /> Jumlah Dokter
                                     </div>
                                     <div className="card-value">
                                         155
@@ -122,7 +122,7 @@ const Dashboard = () => {
                             <div class="mb-2 card bg-white ">
                                 <div className="card-body ">
                                     <div className="card-content-header mb-4">
-                                        <FontAwesomeIcon icon={["fas", "play"]} className="mr-2" /> Dokter vs Penduduk
+                                        <FontAwesomeIcon icon={["fas", "list-ul"]} className="mr-2" /> Dokter vs Penduduk
                                     </div>
                                     <div className="card-value">
                                         1 : 46,080
@@ -134,7 +134,7 @@ const Dashboard = () => {
                             <div class="mb-2 card bg-white ">
                                 <div className="card-body ">
                                     <div className="card-content-header mb-4">
-                                        <FontAwesomeIcon icon={["fas", "play"]} className="mr-2" /> Faskes vs Penduduk
+                                        <FontAwesomeIcon icon={["fas", "list-ul"]} className="mr-2" /> Faskes vs Penduduk
                                     </div>
                                     <div className="card-value">
                                         1 : 42,028
@@ -153,7 +153,7 @@ const Dashboard = () => {
                             <div class="mb-2 card bg-white " style={{ height: 230 }}>
                                 <div className="card-body ">
                                     <div className="card-content-header mb-4 mb-2">
-                                        <FontAwesomeIcon icon={["fas", "play"]} className="mr-2" />Filter By
+                                        <FontAwesomeIcon icon={["fas", "list-ul"]} className="mr-2" />Filter By
                                         </div>
                                     <div className="row">
                                         <div className="col-md-12" >
@@ -225,7 +225,7 @@ const Dashboard = () => {
                             <div class="mb-2 card bg-white ">
                                 <div className="card-body ">
                                     <div className="card-content-header mb-4">
-                                        <FontAwesomeIcon icon={["fas", "play"]} className="mr-2" /> Sebaran Pasien
+                                        <FontAwesomeIcon icon={["fas", "list-ul"]} className="mr-2" /> Sebaran Pasien
                                     </div>
                                     <div className="map">
                                         <MapContainer
@@ -287,7 +287,7 @@ const Dashboard = () => {
                             <div class="mb-2 card bg-white ">
                                 <div className="card-body  ">
                                     <div className="card-content-header mb-4 mb-2">
-                                        <FontAwesomeIcon icon={["fas", "play"]} className="mr-2" />Demografi Pasien
+                                        <FontAwesomeIcon icon={["fas", "list-ul"]} className="mr-2" />Demografi Pasien
                                     </div>
                                     <div id="behind-map" className="card-element">
                                         <div className="col-md-4">
@@ -403,7 +403,7 @@ const Dashboard = () => {
                             <div class="mb-2 card bg-white " style={{ height: 230 }}>
                                 <div className="card-body ">
                                     <div className="card-content-header" >
-                                        <FontAwesomeIcon icon={["fas", "play"]} className="mr-2" />Sebaran Pasien Berdasarkan Penjamin
+                                        <FontAwesomeIcon icon={["fas", "list-ul"]} className="mr-2" />Sebaran Pasien Berdasarkan Penjamin
                                     </div>
                                     <div className="card-element form-inline">
                                         <div className="col-md-5 mt-4" style={{ display: "flex", alignItems: "center", flexDirection: "column" }}>
@@ -422,7 +422,7 @@ const Dashboard = () => {
                             <div class="mb-2 card bg-white " style={{ height: 230 }}>
                                 <div className="card-body ">
                                     <div className="card-content-header" >
-                                        <FontAwesomeIcon icon={["fas", "play"]} className="mr-2" />Dimensi Standart Hidup Layak
+                                        <FontAwesomeIcon icon={["fas", "list-ul"]} className="mr-2" />Dimensi Standart Hidup Layak
                                     </div>
                                     <div className="card-element form-inline" style={{textAlign :"center"}}>
                                         <div className="col-md-5 mt-4" style={{ display: "flex", alignItems: "center", flexDirection: "column" }}>
@@ -445,7 +445,7 @@ const Dashboard = () => {
                             <div class="mb-2 card bg-white " style={{ height: 230 }}>
                                 <div className="card-body ">
                                     <div className="card-content-header" >
-                                        <FontAwesomeIcon icon={["fas", "play"]} className="mr-2" />Umur Harapan Hidup 2021
+                                        <FontAwesomeIcon icon={["fas", "list-ul"]} className="mr-2" />Umur Harapan Hidup 2021
                                     </div>
                                     <div className="card-element form-inline" style={{textAlign :"center"}}>
                                         <div className="col-md-12 mt-4" style={{ display: "flex", alignItems: "center", flexDirection: "column" }}>

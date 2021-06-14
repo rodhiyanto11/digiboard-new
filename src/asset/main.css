@@ -15728,12 +15728,12 @@ legend {
 .widget-content .widget-content-left .widget-heading {
 	opacity: .8;
 	font-weight: bold;
-	color : #ffffff;
+	color : #212121;
 }
 
 .widget-content .widget-content-left .widget-subheading {
 	opacity: .5;
-	color : #ffffff;
+	color : #212121;
 }
 
 .widget-content .widget-content-right {
@@ -22538,7 +22538,7 @@ legend {
 .hamburger-inner::after {
 	width: 24px;
 	height: 2px;
-	background-color: #ffffff;
+	background-color: #212121;
 	border-radius: 10px;
 	position: absolute;
 	transition-property: transform;
@@ -24227,7 +24227,7 @@ a.fc-more:hover {
 		width: auto !important
 	}
 	.sidebar-mobile-open .app-sidebar .app-header__logo .logo-src {
-		width: 97px !important;
+		/* width: 97px !important; */
 		margin-left: auto;
 		margin-right: 0
 	}

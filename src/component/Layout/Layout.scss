@@ -4,6 +4,9 @@
 .app-main{
     padding-top: 0px;
 }
+.app-sidebar__inner{
+  background: $theme;
+}
 .app-main__outer{
     background: $theme;
 }
@@ -28,18 +31,18 @@
     box-shadow:  0px 0px 0px 0px  $theme!important;
 }
 .app-sidebar__heading{
-    color : $white !important;
+    color : $black !important;
 }
 .vertical-nav-menu li a:hover{
   font-size: 1.1rem !important;
   font-weight: 700;
   transition: visibility 0s, opacity 0.5s linear;
-  background-color: $yellow !important;
-  color : black;
+  background-color: $red !important;
+  color : $black;
 }
 
 .metismenu-icon{
-  color : $white;
+  color : $black;
   opacity: 1 !important;
 }.closed-sidebar .app-sidebar .app-sidebar__inner ul li a{
   border-radius: none !important;
@@ -48,20 +51,27 @@
 .vertical-nav-menu li a{
   height: 42px !important;
   border-radius: 10px !important;
-  color : $white !important;
+  color : $black !important;
   opacity: 1 !important;
 }
 .vertical-nav-menu li a:active{
-  color : $white !important;
+  color : $black !important;
 }
 .vertical-nav-menu li a.mm-active{
   background-color:$theme;
 }
 .vertical-nav-menu li a:hover{
-  background-color: $yellow;
-  color : black !important;
+  background-color: $red;
+  color : $white !important;
     i.metismenu-icon{
-    color : black !important;
+    color : $white !important;
+}
+}
+.vertical-nav-menu li .active{
+  background-color: $red;
+  color : $white !important;
+    i.metismenu-icon{
+    color : $white !important;
 }
 }
 .scrollbar-sidebar{
@@ -79,7 +89,7 @@
 
 .vertical-nav-menu i.metismenu-state-icon {
   opacity: 1 !important;
-  color: $white !important;
+  color: $black !important;
 }
 .app-main__inner{
   padding-left: 0px !important;
@@ -91,7 +101,7 @@
   border-radius: 10px !important;
 }
 .fa-angle-down{
-    color: $white;
+    color: $black;
 }
 
 

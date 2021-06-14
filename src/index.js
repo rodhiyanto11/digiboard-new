@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
-import App from './App';
+import Main from './Main';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
@@ -15,7 +15,7 @@ axios.defaults.headers.common['Content-Type'] = 'application/json';
 ReactDOM.render(
   <React.StrictMode>
     
-    <App />
+    <Main />
     
   </React.StrictMode>,
   document.getElementById('root')

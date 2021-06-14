@@ -1,6 +1,25 @@
 
+import React from 'react'
 import avatar from '../../../asset/images/avatars/1.jpg'
+import authContext from '../../../config/context/authContext'
+import {useHistory} from 'react-router-dom'
 const Header = (props) => {
+  const history = useHistory()
+  const AuthContext = authContext
+  const {dispatch} = React.useContext(AuthContext)
+  const handleLogout = () => {
+    try {
+      dispatch ({
+        type : "LOGOUT",
+        payload : null
+      })  
+      // history.push("/auth")
+    } catch (error) {
+      
+    }
+    
+
+}
     return (
       <div className="app-header header-shadow">
         <div className="app-header__logo">
@@ -108,8 +127,9 @@ const Header = (props) => {
                           type="button"
                           tabindex="0"
                           className="dropdown-item"
+                          onClick={() => handleLogout()}
                         >
-                          Dividers
+                          Logout
                         </button>
                       </div>
                       <div className="widget-content-left  ml-3 header-user-info">

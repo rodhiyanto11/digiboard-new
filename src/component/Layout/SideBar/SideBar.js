@@ -1,15 +1,34 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
+import authContext from '../../../config/context/authContext'
 import $ from 'jquery'
 const SideBar =   () => {
-  const activeStyles = {
-        fontWeight: "bold",
-        background: "#F1B24A",  /* fallback for old browsers */
+  const AuthContext = authContext
+  const {dispatch} = React.useContext(AuthContext)
+  const handleAhref = (e) => {
+    e.preventDefault()
   }
-  const iconActiveStyles = {
-        fontWeight: "bold",
-        color : "black"  /* fallback for old browsers */
-  }
+  // const activeStyles = {
+  //       fontWeight: "bold",
+  //       background: "#b71c1c",  
+  //       color : "#ffffff !important"/* fallback for old browsers */
+  // }
+  // const iconActiveStyles = {
+  //       fontWeight: "bold",
+  //       color : "#ffffff !important"  /* fallback for old browsers */
+  // }
+  const handleLogout = (e) => {
+    e.preventDefault()
+    try {
+      dispatch ({
+        type : "LOGOUT",
+        payload : null
+      })  
+      // history.push("/auth")
+    } catch (error) {
+      
+    }
+}
   React.useEffect(() => {
     var side = $(".vertical-nav-menu li a");
     var i;
@@ -77,34 +96,39 @@ const SideBar =   () => {
             <ul className="vertical-nav-menu">
               <li className="app-sidebar__heading">Dashboards</li>
               <li>
-                <NavLink activeStyle={activeStyles} to="/dashboard_covid_admedika">
+                <NavLink  to="/dashboard_covid_admedika">
                 <i className="metismenu-icon pe-7s-rocket"></i>
                   Covid Admedika
                 </NavLink>
               </li>
               <li>
-               <NavLink activeStyle={activeStyles}  to="/dashboard-test"
+               <NavLink to="/dashboard-test"
                >
-                <i activeStyle={iconActiveStyles} className="metismenu-icon pe-7s-rocket"></i>
+                <i className="metismenu-icon pe-7s-rocket"></i>
                   Kalsel Overview
                 </NavLink>
               </li>
   
-              <li className="app-sidebar__heading">UI Components</li>
+              <li className="app-sidebar__heading">My Account</li>
               <li>
-                <a href="#">
-                  <i className="metismenu-icon pe-7s-diamond"></i>
-                  Elements
+                <a href="#" onClick={(e) => handleAhref(e)}>
+                  <i className="metismenu-icon pe-7s-tools"></i>
+                  Setting
                   <i className="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                 </a>
                 <ul>
-                  <li>
-                    <a href="elements-buttons-standard.html">
-                      <i className="metismenu-icon"></i>
-                      Buttons
+                <li>
+                    <a href="elements-dropdowns.html">
+                      <i className="metismenu-icon"></i>Profile
                     </a>
                   </li>
                   <li>
+                    <a href="elements-buttons-standard.html">
+                      <i className="metismenu-icon"></i>
+                      Change Password
+                    </a>
+                  </li>
+                  {/* <li>
                     <a href="elements-dropdowns.html">
                       <i className="metismenu-icon"></i>Dropdowns
                     </a>
@@ -138,80 +162,16 @@ const SideBar =   () => {
                     <a href="elements-utilities.html">
                       <i className="metismenu-icon"></i>Utilities
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
               </li>
               <li>
-                <a href="#">
-                  <i className="metismenu-icon pe-7s-car"></i>
-                  Components
-                  <i className="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-                </a>
-                <ul>
-                  <li>
-                    <a href="components-tabs.html">
-                      <i className="metismenu-icon"></i>Tabs
-                    </a>
-                  </li>
-                  <li>
-                    <a href="components-accordions.html">
-                      <i className="metismenu-icon"></i>Accordions
-                    </a>
-                  </li>
-                  <li>
-                    <a href="components-notifications.html">
-                      <i className="metismenu-icon"></i>Notifications
-                    </a>
-                  </li>
-                  <li>
-                    <a href="components-modals.html">
-                      <i className="metismenu-icon"></i>Modals
-                    </a>
-                  </li>
-                  <li>
-                    <a href="components-progress-bar.html">
-                      <i className="metismenu-icon"></i>Progress Bar
-                    </a>
-                  </li>
-                  <li>
-                    <a href="components-tooltips-popovers.html">
-                      <i className="metismenu-icon"></i>Tooltips &amp; Popovers
-                    </a>
-                  </li>
-                  <li>
-                    <a href="components-carousel.html">
-                      <i className="metismenu-icon"></i>Carousel
-                    </a>
-                  </li>
-                  <li>
-                    <a href="components-calendar.html">
-                      <i className="metismenu-icon"></i>Calendar
-                    </a>
-                  </li>
-                  <li>
-                    <a href="components-pagination.html">
-                      <i className="metismenu-icon"></i>Pagination
-                    </a>
-                  </li>
-                  <li>
-                    <a href="components-scrollable-elements.html">
-                      <i className="metismenu-icon"></i>Scrollable
-                    </a>
-                  </li>
-                  <li>
-                    <a href="components-maps.html">
-                      <i className="metismenu-icon"></i>Maps
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="tables-regular.html">
-                  <i className="metismenu-icon pe-7s-display2"></i>
-                  Tables
+                <a hre="#" onClick={(e) => handleLogout(e)} style={{cursor: "pointer"}} >
+                  <i className="metismenu-icon pe-7s-power"></i>
+                  Logout
                 </a>
               </li>
-              <li className="app-sidebar__heading">Widgets</li>
+              {/* <li className="app-sidebar__heading">Widgets</li>
               <li>
                 <a href="dashboard-boxes.html">
                   <i className="metismenu-icon pe-7s-display2"></i>
@@ -250,7 +210,7 @@ const SideBar =   () => {
                   <i className="metismenu-icon pe-7s-graph2"></i>
                   Upgrade to PRO
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
